@@ -1,0 +1,6 @@
+<!--pages/updata/updata.wxml-->
+<form bindsubmit='res'>
+  <input name="rubbishname" bindconfirm='doClick' placeholder="请输入垃圾名称" class="input_type"></input>
+  <input name="category" bindconfirm='doClick' placeholder="请输入垃圾类型" class="input_type"></input>
+  <button form-type='submit' type='primary'>提 交</button>
+</form>

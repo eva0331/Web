@@ -1,0 +1,31 @@
+/* pages/developer/developer.wxss */
+page {
+  background: #9fdfc4;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view_test {
+  background: #fff;
+  margin-top: 50rpx;
+  width: 90%;
+  height: 800rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.view_question {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.view_answerlist {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40rpx;
+  margin-top: 80rpx;
+}

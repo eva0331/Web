@@ -1,0 +1,10 @@
+<!--pages/historyScore/historyScore.wxml-->
+<view class="max_score">
+  <view class="max_txt">最高得分: {{max}}分</view>
+</view>
+<view class="history_score">
+  <view class="txt">历史得分:</view>
+  <view class="score" wx:for="{{scoreList}}" wx:key="time">
+    <text class="score_txt">{{item.time}}--------------------{{item.score}}分</text>
+  </view>
+</view>

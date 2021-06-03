@@ -1,0 +1,53 @@
+/* pages/historyScore/historyScore.wxss */
+page {
+  background: #9fdfc4;
+}
+
+.max_score {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history_score {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt{
+  font-size: 35rpx;
+  color: #004492;
+  margin-bottom: 20rpx;
+}
+
+.max_txt{
+  font-size: 40rpx;
+  color: #cf0000;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.score {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: white;
+  box-shadow: 1rpx 1rpx 1rpx grey;
+}
+
+.score_txt {
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  margin-left: 15rpx;
+  font-size: 35rpx;
+}

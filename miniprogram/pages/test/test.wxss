@@ -1,0 +1,145 @@
+/* pages/test/test.wxss */
+
+page {
+  background: #9fdfc4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view_test {
+  background: #fff;
+  margin-top: 50rpx;
+  width: 90%;
+  height: 1000rpx;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.view_question {
+  font-size: 50rpx;
+  font-weight: bold;
+  margin: 40rpx;
+  height: 100rpx;
+}
+
+.view_answerlist {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40rpx;
+  margin-top: 60rpx;
+}
+
+.answer {
+  border-radius: 50rpx;
+  box-shadow: 5px 5px 5px #ebebeb;
+  background: #e7e7e7;
+  color: grey;
+  width: 90%;
+  height: 100rpx;
+  margin: 25rpx auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer_activeA {
+  color: #fff;
+  background: #215287;
+}
+
+.answer_activeB {
+  color: #fff;
+  background: #62423a;
+}
+
+.answer_activeC {
+  color: #fff;
+  background: #ea3e30;
+}
+
+.answer_activeD {
+  color: #fff;
+  background: #2e2c2a;
+}
+
+.view_score {
+  background: #fff;
+  margin-top: 30rpx;
+  padding: 10rpx;
+  width: 680rpx;
+  /* height: 750rpx; */
+  flex-direction: column;
+}
+
+.title_list {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  flex-direction: row;
+  display: flex;
+  margin-left: 10rpx;
+}
+
+.title_name {
+  margin-left: 20rpx;
+  color: red;
+}
+
+.title_answer {
+  position: absolute;
+  right: 250rpx;
+  color: red;
+}
+
+.title_rightAnswer {
+  position: absolute;
+  right: 60rpx;
+  color: red;
+}
+
+.view_scorelist {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  flex-direction: row;
+  display: flex;
+  margin-left: 10rpx;
+}
+
+.score_name{
+  margin-left: 20rpx;
+}
+
+.score_answer{
+  position: absolute;
+  right: 250rpx;
+}
+
+.score_rightAnswer{
+  position: absolute;
+  right: 60rpx;
+  color: red;
+}
+
+.score {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: red;
+  margin-top: 40rpx;
+  margin-left: 200rpx;
+  margin-bottom: 20rpx;
+}
+
+button {
+  font-size: 50rpx;
+  color: #fff;
+  background: red;
+  margin-top: 60rpx;
+}

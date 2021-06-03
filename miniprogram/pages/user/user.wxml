@@ -1,0 +1,49 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src='../../images/WeChat.png'></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='load' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">授 权 登 录</button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+
+
+<view wx:else>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="hr"></view>
+  <view class='item'>
+    <view class="title">历史得分</view>
+    <button class='to' bindtap="toHistoryScore" hover-class="none">></button>
+  </view>
+  <view class="line"></view>
+
+  <view class='item'>
+    <view class="title">上传数据</view>
+    <button class='to' bindtap="toUpdata" hover-class="none">></button>
+  </view>
+  <view class="line"></view>
+
+  <view class='item'>
+    <view class="title">分享好友</view>
+    <button open-type="share" class='to' hover-class="none">></button>
+  </view>
+  <view class="line"></view>
+
+  <view class='item'>
+    <view class="title">关于我们</view>
+    <button class='to' bindtap="toDeveloper" hover-class="none">></button>
+  </view>
+  <view class="hr"></view>
+</view>

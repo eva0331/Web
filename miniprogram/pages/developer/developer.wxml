@@ -1,0 +1,7 @@
+<!--pages/developer/developer.wxml-->
+<view class="view_test">
+  <view class="view_question">开发者:eva</view>
+  <view class="view_answerlist">
+    <view>联系方式：3438323140@qq.com</view>
+  </view>
+</view>

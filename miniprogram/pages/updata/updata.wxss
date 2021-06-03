@@ -1,0 +1,18 @@
+/* pages/updata/updata.wxss */
+page {
+  background: #9fdfc4;
+}
+.input_type {
+  width: 85%;
+  background-color: #ffffff;
+  margin: 30rpx;
+  padding: 20rpx;
+  font-size: 40rpx;
+  border-radius: 15rpx;
+}
+button{
+  width: 40%;
+  border-radius: 50rpx;
+  font-size: 40rpx;
+  margin: 80rpx auto;
+}

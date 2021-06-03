@@ -1,0 +1,28 @@
+<!--pages/test/test.wxml-->
+<view wx:if="{{isHide}}" class="view_test">
+  <view class="view_question">{{index+1}}、{{question[index].name}}是什么垃圾？</view>
+  <view class="view_answerlist">
+    <view url="" class="answer" hover-class="answer_activeA" bindtap='answerClickA'>可回收物</view>
+    <view url="" class="answer" hover-class="answer_activeB" bindtap='answerClickB'>湿垃圾</view>
+    <view url="" class="answer" hover-class="answer_activeC" bindtap='answerClickC'>有害垃圾</view>
+    <view url="" class="answer" hover-class="answer_activeD" bindtap='answerClickD'>干垃圾</view>
+  </view>
+</view>
+
+<view wx:else>
+  <view class="view_score">
+    <view class="title_list">
+      <view class="title_name">垃圾名称</view>
+      <view class="title_answer">你的答案</view>
+      <view class="title_rightAnswer">正确答案</view>
+    </view>
+    <view class="view_scorelist" wx:for="{{question}}" wx:key="name">
+      <view class="score_name">{{item.name}}</view>
+      <view class="score_answer">{{item.answer}}</view>
+      <view class="score_rightAnswer">{{item.rightAnswer}}</view>
+    </view>
+    <view class="score">得分:{{score}}分</view>
+  </view>
+  <button bindtap="doClickX">记 录 成 绩</button>
+  <button bindtap="doClick">重 新 测 试</button>
+</view>
