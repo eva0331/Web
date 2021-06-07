@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue指令1</title>
+</head>
+<body>
+    <div id="app" class="app">
+        {{message+"hhhhh"}}
+        <h2>{{student.id}} {{student.name}}</h2>
+        <ul>
+            <li>{{campus[0]}}</li>
+        </ul>
+        <h2 v-text="message+'hh'">{{student.id}} {{student.name}}</h2>
+        <p v-html="url"></p>
+        <input type="button" value="单击" v-on:click="doIt">
+        <input type="button" value="鼠标移入" v-on:mouseenter="doIt">
+        <input type="button" value="双击" v-on:dblclick="doIt">
+        <input type="button" value="双击" @dblclick="doIt">
+        <h2 @click="changeFood">标签（点击事件改变值）：{{food}}</h2>
+
+        <div>计数器
+            <button @click="sub">-</button>
+            <span>{{num}}</span>
+            <button @click="add">+</button>
+        </div>
+
+        <h2>v-on补充</h2>
+        <input type="button" value="点击（控制台传参数）" @click="doIt2(666,'老铁！')">
+        enter：<input type="text" @keyup.enter="sayHi">
+    </div>
+    
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script>
+        var app=new Vue({
+            //el:".app",
+            el:"#app",
+            data:{
+                message:"好家伙！",
+                student:{
+                    id:"001",
+                    name:"小明"
+                },
+                campus:["北京校区","上海校区","广州校区","深圳校区"],
+                url:"<a href='http://www.baidu.com'>百度</a>",
+                food:"蛋炒饭",
+                num:"1"
+            },
+            methods:{
+                doIt:function(){
+                    alert("做It");
+                },
+                changeFood:function(){
+                    this.food+="好好吃!"
+                },
+                add:function(){
+                    if(this.num<10){
+                        this.num++;
+                    }else{
+                        alert("别点了，太大了");
+                    }
+                },
+                sub:function(){
+                    if(this.num>0){
+                        this.num--;
+                    }else{
+                        alert("别点了，太小了");
+                    }         
+                },
+                doIt2:function(p1,p2){
+                    console.log(p1);
+                    console.log(p2);
+                },
+                sayHi:function(){
+                    alert("吃了吗，老铁？");
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片切换案例</title>
+</head>
+<body>
+    <div id="app">
+        <input type="button" v-show="index!=0" value="-" @click="prev">       
+        <img v-bind:src="imgArr[index]" alt="" />
+        <input type="button" v-show="index<imgArr.length-1" value="+" @click="next">
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app=new Vue({
+            el:"#app",
+            data:{
+                index:0,
+                imgArr:[
+                    "image/1.png",
+                    "image/2.png",
+                    "image/3.png",
+                    "image/4.png",
+                    "image/5.png",
+                ],
+            },
+            methods:{
+                prev:function(){
+                    this.index--;
+                },
+                next:function(){
+                    this.index++;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

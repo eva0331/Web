@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue基础3</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in arr">{{index+1}} 地区：{{item}}</li>
+        </ul>
+        <input type="button" value="添加数据" @click="add">
+        <input type="button" value="移除数据" @click="remove">
+        <p v-for="it in food" v-bind:title="it.name">
+            {{it.name}}
+        </p><br><br>
+
+        <input type="button" value="修改message" @click="setM">
+        <input type="text" v-model="message" @keyup.enter="getM">
+        <p>{{message}}</p>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app=new Vue({
+            el:"#app",
+            data:{
+                arr:["北京","上海","深圳","广州"],
+                food:[
+                    {name:"蛋炒饭"},
+                    {name:"饭炒蛋"},
+                    {name:"雪顶火山"},
+                    {name:"凉拌番茄"},
+                ],
+
+                message:"同步变化"
+            },
+            methods:{
+                add:function(){
+                    this.food.push({name:"西红柿炒鸡蛋"});
+                },
+                remove:function(){
+                    this.food.shift();
+                },
+
+                getM:function(){
+                    alert(this.message);
+                },
+                setM:function(){
+                    this.message="vue和微信小程序简直一模一样！";
+                }
+            }
+        })
+    </script>
+</body>
+</html>

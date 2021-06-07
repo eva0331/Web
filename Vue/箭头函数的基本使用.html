@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 普通函数
+        const aaa = function(){
+
+        }
+
+        const obj0 = {
+            bbb(){
+
+            }
+        }
+
+        // 参数问题
+        const ccc = () => {
+
+        }
+
+        const sum = (num1,num2) => {
+            return num1 + num2
+        }
+
+        const power = num => {
+            return num * num
+        }
+
+        // 一行代码可以简写
+        const mul = (num1,num2) => num1 + num2
+
+        const demo = () => console.log('Hello')
+        demo()
+
+        // 什么时候写箭头函数
+        setTimeout(() => {
+            console.log(this)
+        })
+
+        // 箭头函数中的 this 从内向外一层层查找 this，直到有 this 的定义
+        const obj1 = {
+            aa(){
+                setTimeout(function(){
+                    console.log(this) // Window
+                })
+
+                setTimeout(() => {
+                    console.log(this)  // {aa: ƒ}
+                })
+            }
+
+        }
+        obj1.aa()
+        
+        const obj2 = {
+            a(){
+                setTimeout(function(){
+                    setTimeout(function(){
+                        console.log(this) // Window
+                    })
+                    setTimeout(() => {
+                        console.log(this) // Window
+                    })
+                })
+                setTimeout(() => {
+                    setTimeout(function(){
+                        console.log(this) // Window
+                    })
+                    setTimeout(() => {
+                        console.log(this) // {aa: ƒ}
+                    })
+                })
+            }
+
+        }
+        obj2.a()
+    </script>
+</body>
+</html>

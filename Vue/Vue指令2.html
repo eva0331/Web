@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue指令2</title>
+    <style>
+        .active{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        图片显示：
+        <input type="button" value="图片切换显示状态" @click="changeIsShow">
+        <img v-show="isShow" src="image/a.png" alt=""><br><br>
+        <input type="button" value="图片累积年龄可见" @click="addAge">
+        <img v-show="age>=18" src="image/a.png" alt=""><br><br>
+
+        <input type="button" value="v-if切换显示标签元素" @click="toggleIsShow">
+        <p v-if="isShow2">标签元素(v-if)</p>
+        <p v-show="isShow2">标签元素(v-show)</p>
+        <h1 v-if="t>30">热死啦</h1>
+        
+        <img v-bind:src="imgSrc" :title="imgTitle+'!!!'" :class="{active:isActive}" @click="toggleActive"><br><br>
+        <img v-bind:class="isActive?'active':''">
+        <img v-bind:class="{active:isActive}"><br><br>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app=new Vue({
+            //el:".app",
+            el:"#app",
+            data:{
+                isShow:false,
+                age:17,
+                t:40,
+                isShow2:false,
+                imgSrc:"image/a.png",
+                imgTitle:"我是图片标题",
+                isActive:false
+            },
+            methods:{
+                changeIsShow:function(){
+                    this.isShow=!this.isShow;
+                },
+                addAge:function(){
+                    this.age++;
+                },
+                toggleIsShow:function(){
+                    this.isShow2=!this.isShow2;
+                },
+                toggleActive:function(){
+                    this.isActive=!this.isActive;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
