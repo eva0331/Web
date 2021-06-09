@@ -1,4 +1,4 @@
-// pages/updata/updata.js
+// pages/update/update.js
 Page({
 
   /**

@@ -37,7 +37,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.10.2",
+  "libVersion": "2.16.0",
   "projectname": "miniprogram",
   "debugOptions": {
     "hidedInDevtools": []
