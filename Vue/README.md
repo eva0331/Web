@@ -22,6 +22,7 @@
 ## coderwhy最全最新Vue、Vuejs教程，从入门到精通
 #### 教程日期：2020-02-18 
 #### [bilibili教程链接](https://www.bilibili.com/video/BV15741177Eh)
+#### [github教程笔记链接](https://github.com/zhangtianyi0110/VueLearnNotes)
 ---
 
 ### git 常用命令
