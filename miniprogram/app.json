@@ -6,7 +6,7 @@
     "pages/user/user",
     "pages/kindInfo/kindInfo",
     "pages/historyScore/historyScore",
-    "pages/updata/updata",
+    "pages/update/update",
     "pages/developer/developer"
   ],
   "window": {

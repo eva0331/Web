@@ -1,4 +1,4 @@
-/* pages/updata/updata.wxss */
+/* pages/update/update.wxss */
 page {
   background: #9fdfc4;
 }

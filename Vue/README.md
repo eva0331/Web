@@ -9,7 +9,7 @@
   - v-text
   - v-html
   - v-on基础
-1. 显示切换，属性绑定
+2. 显示切换，属性绑定
   - v-show
   - v-if
   - v-bind
