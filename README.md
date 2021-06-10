@@ -2,11 +2,8 @@
 
 ## 教程
 - github前端教程：https://github.com/qianguyihao/Web
-- 知乎前端教程：https://zhuanlan.zhihu.com/p/164701269
-- 网易云课堂JavaScript教程：https://study.163.com/course/courseMain.htm?courseId=224014
-- setTimeout异步：https://www.cnblogs.com/ceceliahappycoding/p/10772351.html
 - 我的github前端笔记：https://github.com/whitemarch/Web
-- 我的bilibili前端教程收藏：https://space.bilibili.com/96098861/favlist?fid=1173508561&ftype=create
+- 我的bilibili收藏：https://space.bilibili.com/96098861/favlist?fid=1173508561&ftype=create
 - 我的github项目star：https://github.com/whitemarch?tab=stars
 
 ## 面试题
