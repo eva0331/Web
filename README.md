@@ -3,7 +3,7 @@
 ## 教程
 - github前端教程：https://github.com/qianguyihao/Web
 - 我的github前端笔记：https://github.com/whitemarch/Web
-- 我的bilibili收藏：https://space.bilibili.com/96098861/favlist?fid=1173508561&ftype=create
+- 我的bilibili前端教程收藏：https://space.bilibili.com/96098861/favlist?fid=1173508561&ftype=create
 - 我的github项目star：https://github.com/whitemarch?tab=stars
 
 ## 面试题
