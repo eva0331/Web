@@ -16,7 +16,7 @@
 - 掘金前端面试题合集：https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md
 
 ## 实战项目
-- 硅谷外卖：https://www.bilibili.com/video/BV1Lp411d7w4
+- 硅谷外卖bilibili教程：https://www.bilibili.com/video/BV1Lp411d7w4
   + 项目文件：https://github.com/nys013/vue_project-wm
   + 项目后台文件：https://github.com/nys013/vm-server
 
