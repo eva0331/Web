@@ -106,7 +106,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../../common/stylus/mixins.styl"
+  @import "../assets/stylus/mixins.styl"
 
   .shop-info
     position: absolute

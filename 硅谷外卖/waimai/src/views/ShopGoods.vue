@@ -53,9 +53,9 @@
 <script>
   import BScroll from 'better-scroll'
   import {mapState} from 'vuex'
-  import CartControl from '../../../components/CartControl/CartControl.vue'
-  import Food from '../../../components/Food/Food.vue'
-  import ShopCart from '../../../components/ShopCart/ShopCart.vue'
+  import CartControl from '../components/CartControl.vue'
+  import Food from '../components/Food.vue'
+  import ShopCart from '../components/ShopCart.vue'
 
 
   export default {
@@ -166,7 +166,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../../common/stylus/mixins.styl"
+  @import "../assets/stylus/mixins.styl"
   .goods
     display: flex
     position: absolute

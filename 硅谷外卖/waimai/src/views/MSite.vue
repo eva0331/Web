@@ -33,7 +33,7 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
-          <img src="../../assets/imgs/msite_back.svg" alt="back" v-else>
+          <img src="../assets/imgs/msite_back.svg" alt="back" v-else>
         </nav>
         <!--首页附近商家-->
         <div class="msite_shop_list">
@@ -54,8 +54,8 @@
   import Swiper from 'swiper'
   import 'swiper/swiper.min.css'
 
-  import HeaderTop from '../../components/HeaderTop.vue'
-  import ShopList from '../../components/ShopList.vue'
+  import HeaderTop from '../components/HeaderTop.vue'
+  import ShopList from '../components/ShopList.vue'
 
 
 

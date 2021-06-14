@@ -98,7 +98,7 @@
 <script>
   import {mapState} from 'vuex'
   import { MessageBox, Toast } from 'mint-ui'
-  import HeaderTop from '../../components/HeaderTop.vue'
+  import HeaderTop from '../components/HeaderTop.vue'
   export default {
     computed: {
       ...mapState(['userInfo'])

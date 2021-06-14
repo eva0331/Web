@@ -47,7 +47,7 @@
   import { MessageBox } from 'mint-ui'
   import BScroll from 'better-scroll'
   import {mapState, mapGetters} from 'vuex'
-  import CartControl from '../CartControl/CartControl.vue'
+  import CartControl from '../CartControl.vue'
 
   export default {
     data () {

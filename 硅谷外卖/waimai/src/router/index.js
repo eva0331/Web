@@ -1,5 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+
+const MSite = () => import('../views/MSite.vue')
+const Search = () => import('../views/Search.vue')
+const Order = () => import('../views/Order.vue')
+const Profile = () => import('../views/Profile.vue')
+
+import Login from '../views/Login.vue'
+import Shop from '../views/Shop.vue'
+import ShopGoods from '../views/ShopGoods.vue'
+import ShopRatings from '../views/ShopRatings.vue'
+import ShopInfo from '../views/ShopInfo.vue'
 
 const routes = [
   {

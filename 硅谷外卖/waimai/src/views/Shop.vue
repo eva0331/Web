@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import ShopHeader from '../../components/ShopHeader/ShopHeader.vue'
+  import ShopHeader from '../components/ShopHeader.vue'
 
   export default {
     mounted () {
@@ -32,7 +32,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../common/stylus/mixins.styl"
+  @import "../assets/stylus/mixins.styl"
   .tab
     height 40px
     line-height 40px

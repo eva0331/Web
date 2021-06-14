@@ -75,7 +75,7 @@
 <script>
   import BScroll from 'better-scroll'
   import {mapState, mapGetters} from 'vuex'
-  import Star from '../../../components/Star/Star.vue'
+  import Star from '../components/Star.vue'
 
   export default {
 
@@ -137,7 +137,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../../common/stylus/mixins.styl"
+  @import "../assets/stylus/mixins.styl"
 
   .ratings
     position: absolute
