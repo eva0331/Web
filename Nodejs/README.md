@@ -121,5 +121,5 @@ if (true ){
 ---
 
 - 每个项目都有一个 package.json 文件
-- 有 package.json 文件的，先删掉 node_modules 文件夹，再 `npm i` 安装包
+- 有 package.json 文件的，可以删掉 node_modules 文件夹，用 `npm i` 可以安装回来
 
