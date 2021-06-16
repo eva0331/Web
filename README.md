@@ -14,9 +14,5 @@
 - https://github.com/qiu-deqing/FE-interview
 - 简书前端面试题合集：https://www.jianshu.com/p/2f7eb1ad7174
 - 掘金前端面试题合集：https://github.com/shfshanyue/blog/blob/master/post/juejin-interview.md
-
-## 实战项目
-- 硅谷外卖bilibili教程：https://www.bilibili.com/video/BV1Lp411d7w4
-  + 项目文件：https://github.com/nys013/vue_project-wm
-  + 项目后台文件：https://github.com/nys013/vm-server
-
+- JS前端进阶之道：https://yuchengkai.cn/docs/frontend/
+- 前端面试指南：https://blog.poetries.top/FE-Interview-Questions/
