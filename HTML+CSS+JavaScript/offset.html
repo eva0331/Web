@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 10px solid #000;
+            margin: 100px;
+            background-color: pink;
+        }
+        .box4 {
+            width: 300px;
+            height: 300px;
+            padding: 100px;
+            margin: 100px;
+            position: relative;
+            border: 100px solid #000;
+            background-color: pink;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*position: absolute;*/
+            /*left: 10px;*/
+            /*top: 10px;*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<div class="box1" style="position: absolute;">
+    <div class="box2" style="position: fixed;">
+        <div class="box3"></div>
+    </div>
+</div>
+
+<div class="box4">
+    <div class="box5" style="left: 10px"></div>
+</div>
+
+<script>
+    // offsetWidth = width + padding + border
+    // offsetHeight = Height + padding + border
+    var div1 = document.getElementsByTagName("div")[0];
+    console.log(div1.offsetHeight);          //打印结果：140（100+20+20）
+    console.log(typeof div1.offsetHeight);   //打印结果：number
+
+    // 如果当前元素的父元素，有CSS定位（position为absolute、relative、fixed），那么 offsetParent 获取的是最近的那个父元素
+    var box3 = document.getElementsByClassName("box3")[0];
+    console.log(box3.offsetParent); 
+
+    // offsetLeft：当前元素相对于其定位父元素的水平偏移量。
+    // offsetTop：当前元素相对于其定位父元素的垂直偏移量。 
+    var box5 = document.getElementsByClassName("box5")[0];
+    console.log(box5.offsetLeft);  //100
+    console.log(box5.style.left);  //10px
+
+</script>
+</body>
+</html>
