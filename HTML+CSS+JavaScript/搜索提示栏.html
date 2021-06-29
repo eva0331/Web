@@ -69,7 +69,7 @@
         }
         var str = newArr.join("");
 
-        //Bug1：每次创建新的ul之前，如果有就的ul，就先删除旧的ul
+        //Bug1：每次创建新的ul之前，如果有旧的ul，就先删除旧的ul
         if (box.getElementsByTagName("ul")[0]) {
             //只要存在，那么就是object，object类型的数据，只要不是null,对应的boolean值都是true；
             box.removeChild(box.children[2]);
