@@ -1,3 +1,65 @@
+# 项目知识点
+## 移动端页面对于点击事件会有300毫秒的延迟
+        移动浏览器为什么会设置300毫秒的等待时间呢？这与双击缩放的方案有关。平时我们有可能已经注意到了，双击缩放，即用手指在屏幕上快速点击两次，可以看到内容或者图片放大，再次双击，浏览器会将网页缩放至原始比例。
+        浏览器捕获第一次单击后，会先等待一段时间，如果在这段时间区间里用户未进行下一次点击，则浏览器会做单击事件的处理。如果这段时间里用户进行了第二次单击操作，则浏览器会做双击事件处理。这段时间就是上面提到的300毫秒延迟。
+解决方法：
+1) 禁止缩放 
+    ```html
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,u ser-scalable=no">
+    ```
+2) fastclick.js 
+    ```js
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script> 
+    if ('addEventListener' in document) { 
+        document.addEventListener('DOMContentLoaded', function({ 
+            FastClick.attach(document.body); 
+        }, false); 
+    }
+    if(!window.Promise) { 
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js" '+'>'+'<'+'/'+'script>'); 
+    } 
+    </script>
+    ```
+## 使用 swiper 实现图片轮播 
+- 地址: http://www.swiper.com.cn/ 
+- 下载: npm install --save swiper
+```html
+<!--首页导航-->
+<nav class="msite_nav">
+    <div class="swiper-container" v-if="categorys.length">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(categorys, index) in categorysArr" :key="index">
+                <a href="javascript:" class="link_to_food" v-for="(category, index) in categorys" :key="index">
+                    <div class="food_container">
+                        <img :src="baseImageUrl+category.image_url">
+                    </div>
+                <span>{{category.title}}</span>
+                </a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <img src="./images/msite_back.svg" alt="back" v-else>
+</nav>
+```
+```js
+<script> 
+import Swiper from 'swiper' 
+import 'swiper/dist/css/swiper.min.css' 
+export default { 
+    mounted () { 
+        new Swiper('.swiper-container', { 
+            pagination: { 
+                el: '.swiper-pagination', 
+            },
+            loop: true 
+        }) 
+    } 
+} 
+</script>
+```
 # day01
 ## 1. 项目开发准备
     项目描述
