@@ -60,6 +60,21 @@ export default {
 } 
 </script>
 ```
+
+## 图片懒加载: vue-lazyload 
+- 地址: https://github.com/hilongjw/vue-lazyload 
+- 下载: npm install --save vue-loader
+
+```js
+import VueLazyload from 'vue-lazyload' 
+import loading from './common/img/loading.gif' 
+Vue.use(VueLazyload, { 
+    loading 
+})
+
+<img v-lazy="food.image">
+```
+
 # day01
 ## 1. 项目开发准备
     项目描述
