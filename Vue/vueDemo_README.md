@@ -25,15 +25,15 @@
         </template>
         <script>
             export default {
-			  props: []/{}
-              data(){},
-			  computed: {}
-              methods: {},
-			  
-			  watch: {}
-			  filters: {}
-			  directives: {}
-			  components: {}
+                props: []/{}
+                      data(){},
+                computed: {}
+                      methods: {},
+                
+                watch: {}
+                filters: {}
+                directives: {}
+                components: {}
             }
         </script>
         <style>
@@ -99,7 +99,7 @@
             console.log(response.data) // 得到返回结果数据
           })
           .catch(error => {
-        	console.log(error.message)
+        	  console.log(error.message)
           })
     
 ## 5. vue-router
