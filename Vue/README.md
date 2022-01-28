@@ -32,7 +32,7 @@
     git init
     git status
     git add .
-    git commit -m "update"
+    git commit -m "updata"
     git reflog
 
     git push https://github.com/whitemarch/Web.git master
